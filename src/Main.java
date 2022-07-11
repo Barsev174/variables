@@ -4,6 +4,9 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
+        task1();
+    }
+    public static void task1 () {
         // Задача 1
         System.out.println("Задача 1, без вывода на экран");
 
@@ -15,7 +18,7 @@ public class Main {
         float pizza = 3.4f;
         double apple = 8.484561;
 
-        //boolean sadly = money < 100000000; в таком виде не проходил коммит, поэтому закомментировал
+        boolean fany = true;
 
         char a = 64;
 
@@ -33,14 +36,18 @@ public class Main {
 
         // Задача 3
         System.out.println("Задача 3");
+        int banana = 5;
+        int weightBanana = 80;
+        int Milk = 200 / 100;
+        int weightMilk = 105;
+        int iceCream = 2;
+        int weightIceCream = 100;
+        int egg = 4;
+        int weightEgg = 70;
 
-        double weightBanana = 80 * 5;
-        double weightMilk = 105 * 2;
-        double weightIceCream = 100 * 2;
-        double weightAgg = 70 * 4;
-        double weightOfAllProductsG = weightBanana + weightMilk + weightIceCream + weightAgg;
+        int weightOfAllProductsG = (banana * weightBanana) + (Milk * weightMilk) + (iceCream * weightIceCream) + (egg * weightEgg);
         System.out.println("Вес завтрака в граммах: " + weightOfAllProductsG);
-        double weightOfAllProductsKg = weightOfAllProductsG / 1000;
+        double weightOfAllProductsKg = (double)weightOfAllProductsG / 1000;
         System.out.println("Вес завтрака в килограммах: " + weightOfAllProductsKg);
 
         // Задача 4
@@ -48,8 +55,9 @@ public class Main {
         double weight250 = 250;
         double weight500 = 500;
         double needToLose = 7;
-        double intensityOfWeightLoss250 = weight250 / 1000;
-        double intensityOfWeightLoss500 = weight500 / 1000;
+        double gramsInKg = 1000;
+        double intensityOfWeightLoss250 = weight250 / gramsInKg;
+        double intensityOfWeightLoss500 = weight500 / gramsInKg;
         double weightLossDay250 = needToLose / intensityOfWeightLoss250;
         double weightLossDay500 = needToLose / intensityOfWeightLoss500;
         System.out.println("При ежедневной потере " + weight250 + " гр. веса, потребуется " + weightLossDay250 + " дней, что бы сбросить " + needToLose + " кг.");
@@ -85,16 +93,6 @@ public class Main {
         System.out.println("Маша теперь получает " + salaryIncreaseMary + " рублей в месяц. Годовой доход вырос на " + salaryDifferenceMary + " рублей");
         System.out.println("Денис теперь получает " + salaryIncreaseDenis + " рублей в месяц. Годовой доход вырос на " + salaryDifferenceDenis + " рублей");
         System.out.println("Кристина теперь получает " + salaryIncreaseKristina + " рублей в месяц. Годовой доход вырос на " + salaryDifferenceKristina + " рублей");
-
-
-
-
-
-
-
-
-
-
 
 
     }
